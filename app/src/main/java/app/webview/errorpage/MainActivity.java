@@ -1,5 +1,6 @@
 package app.webview.errorpage;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -66,7 +67,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         loadTopics("all");
 
         // Set ListView item click listener
-        listView.setOnItemClickListener((adapterView, view, i, l) -> TopicAdapter.flipCard(MainActivity.this, view, view));
+        listView.setOnItemClickListener((adapterView, view, i, l) -> TopicAdapter.flipCard(MainActivity.this, view, view, () -> {
+            Intent intent = new Intent(MainActivity.this, TopicDetailActivity.class);
+            intent.putExtra("url", currentTopics.get(i).getDetailUrl());
+            startActivity(intent);
+        }));
     }
 
     private void loadTopics(String category) {

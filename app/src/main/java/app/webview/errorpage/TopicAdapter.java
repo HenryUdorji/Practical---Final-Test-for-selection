@@ -74,7 +74,7 @@ public class TopicAdapter extends ArrayAdapter<ExcelTopic> {
         TextView descriptionText;
     }
 
-    public static void flipCard(Context context, View front, View back) {
+    public static void flipCard(Context context, View front, View back, Runnable onFlipEnd) {
         ObjectAnimator flipOut = (ObjectAnimator) AnimatorInflater.loadAnimator(context, R.animator.flip_out);
         ObjectAnimator flipIn = (ObjectAnimator) AnimatorInflater.loadAnimator(context, R.animator.flip_in);
 
@@ -88,10 +88,18 @@ public class TopicAdapter extends ArrayAdapter<ExcelTopic> {
                     front.setVisibility(View.GONE);
                     back.setVisibility(View.VISIBLE);
                     flipIn.start();
+
+                    flipIn.addListener(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            onFlipEnd.run(); // 👈 Call navigation after flipIn ends
+                        }
+                    });
                 }
             });
 
             flipOut.start();
+
         } else {
             flipOut.setTarget(back);
             flipIn.setTarget(front);
@@ -102,6 +110,13 @@ public class TopicAdapter extends ArrayAdapter<ExcelTopic> {
                     back.setVisibility(View.GONE);
                     front.setVisibility(View.VISIBLE);
                     flipIn.start();
+
+                    flipIn.addListener(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            onFlipEnd.run(); // 👈 Call navigation after flipIn ends
+                        }
+                    });
                 }
             });
 
