@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "title": "Excel Range",
+    "subtitle": "Formulas & Functions",
+    "description": "Learn about Excel ranges and how to work with them effectively for data analysis",
+    "category": "Basics",
+    "detailUrl": "https://julisunkan.github.io/e/introduction/range.html",
+    "color": "#CC1E58"
+  },
+  {
+    "id": 2,
+    "title": "Excel Ribbon & Worksheets",
+    "subtitle": "Format Cells & Templates",
+    "description": "Master the Excel interface, understand the ribbon, and work with multiple worksheets",
+    "category": "Basics",
+    "detailUrl": "https://julisunkan.github.io/e/basics/ribbon.html",
+    "color": "#1F88A8"
+  },
+  {
+    "id": 3,
+    "title": "Excel Data Validation",
+    "subtitle": "Counts & Keyboard Shortcuts",
+    "description": "Learn data validation techniques and useful keyboard shortcuts for efficient Excel work",
+    "category": "Basics",
+    "detailUrl": "https://julisunkan.github.io/e/basics/data-validation.html",
+    "color": "#5456AF"
+  },
+  {
+    "id": 4,
+    "title": "Lookup & References",
+    "subtitle": "Financial & Statistical Functions",
+    "description": "Discover powerful lookup functions like VLOOKUP and INDEX-MATCH for data analysis",
+    "category": "Functions",
+    "detailUrl": "https://julisunkan.github.io/e/functions/lookup-reference-functions.html",
+    "color": "#4ABE7A"
+  },
+  {
+    "id": 5,
+    "title": "Formula Errors",
+    "subtitle": "Arrays & Sort and Filter",
+    "description": "Troubleshoot common formula errors and learn advanced sorting and filtering techniques",
+    "category": "Functions",
+    "detailUrl": "https://julisunkan.github.io/e/functions/formula-errors.html",
+    "color": "#804ABE"
+  },
+  {
+    "id": 6,
+    "title": "Conditional Formatting",
+    "subtitle": "Charts & Pivot Tables",
+    "description": "Enhance your data visualization with conditional formatting, charts, and pivot tables",
+    "category": "Data Analysis",
+    "detailUrl": "https://julisunkan.github.io/e/data-analysis/conditional-formatting.html",
+    "color": "#D61556"
+  },
+  {
+    "id": 7,
+    "title": "Excel Tables",
+    "subtitle": "Solvers & Analysis Toolpak",
+    "description": "Work with Excel tables and use the Analysis Toolpak for advanced data analysis",
+    "category": "Data Analysis",
+    "detailUrl": "https://julisunkan.github.io/e/data-analysis/tables.html",
+    "color": "#1F88A8"
+  },
+  {
+    "id": 8,
+    "title": "Excel Macros",
+    "subtitle": "Range Objects & Variables",
+    "description": "Create and use macros to automate repetitive tasks in Excel",
+    "category": "VBA",
+    "detailUrl": "https://julisunkan.github.io/e/vba/create-a-macro.html",
+    "color": "#4ABE7A"
+  },
+  {
+    "id": 9,
+    "title": "Excel Loops",
+    "subtitle": "ActiveX Control & Vlookup",
+    "description": "Use VBA loops and ActiveX controls to create interactive Excel applications",
+    "category": "VBA",
+    "detailUrl": "https://julisunkan.github.io/e/vba/loop.html",
+    "color": "#804ABE"
+  },
+  {
+    "id": 10,
+    "title": "Excel Regression",
+    "subtitle": "Standard Deviation & Gantt Chart",
+    "description": "Perform statistical analysis and create Gantt charts for project management",
+    "category": "Examples",
+    "detailUrl": "https://julisunkan.github.io/e/examples/regression.html",
+    "color": "#D61556"
+  },
+  {
+    "id": 11,
+    "title": "Excel CountIf",
+    "subtitle": "Budget & Statistical Tests",
+    "description": "Use COUNTIF functions and learn to create budget templates in Excel",
+    "category": "Examples",
+    "detailUrl": "https://julisunkan.github.io/e/examples/countif.html",
+    "color": "#1F88A8"
+  },
+  {
+    "id": 12,
+    "title": "Excel AutoFill",
+    "subtitle": "Ranks & Frequency",
+    "description": "Master AutoFill features and create frequency distributions in Excel",
+    "category": "Examples",
+    "detailUrl": "https://julisunkan.github.io/e/examples/autofill.html",
+    "color": "#5456AF"
+  },
+  {
+    "id": 13,
+    "title": "Absolute References",
+    "subtitle": "Circular References",
+    "description": "Understand absolute and circular references in Excel formulas",
+    "category": "Basics",
+    "detailUrl": "https://julisunkan.github.io/e/examples/absolute-reference.html",
+    "color": "#CC1E58"
+  },
+  {
+    "id": 14,
+    "title": "Excel Sparklines",
+    "subtitle": "Forecast & Trends",
+    "description": "Create compact visualizations with sparklines and use Excel's forecasting tools",
+    "category": "Data Analysis",
+    "detailUrl": "https://julisunkan.github.io/e/examples/sparklines.html",
+    "color": "#1F88A8"
+  }
+]

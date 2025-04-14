@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:title="All Topics" />
+
+        <item
+            android:id="@+id/nav_basics"
+            android:title="Excel Basics" />
+
+        <item
+            android:id="@+id/nav_functions"
+            android:title="Functions &amp; Formulas" />
+
+        <item
+            android:id="@+id/nav_data_analysis"
+            android:title="Data Analysis" />
+
+        <item
+            android:id="@+id/nav_vba"
+            android:title="VBA &amp; Macros" />
+
+        <item
+            android:id="@+id/nav_examples"
+            android:title="Examples &amp; Use Cases" />
+    </group>
+</menu>

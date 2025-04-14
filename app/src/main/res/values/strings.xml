@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Advanced Data Analysis Guide</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Excel Tutorial</string>
+    <string name="nav_header_subtitle">Learn Excel from basics to advanced</string>
+    <string name="action_settings">Settings</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
 </resources>

@@ -2,6 +2,10 @@ plugins {
     id 'com.android.application'
 }
 
+def localPropertiesFile = rootProject.file("local.properties")
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(localPropertiesFile))
+
 android {
     compileSdk 33
 
@@ -15,10 +19,21 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        release {
+            storeFile file(localProperties['SIGNING_JKS_FILE_PATH'])
+            storePassword localProperties['SIGNING_KEYSTORE_PASSWORD']
+            keyAlias localProperties['SIGNING_KEY_ALIAS']
+            keyPassword localProperties['SIGNING_KEY_PASSWORD']
+        }
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
